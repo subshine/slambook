@@ -7,7 +7,7 @@ set( CMAKE_CXX_FLAGS "-std=c++11 -O3" )
 # 添加cmake模块路径
 list( APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules )
 
-find_package( OpenCV )
+find_package( OpenCV 3.1 REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 find_package( G2O )
